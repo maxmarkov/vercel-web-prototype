@@ -1,6 +1,9 @@
+import './Footer.css'; 
+import React from 'react';
+
 function Footer() {
     return (
-      <footer>
+      <footer className='footer'>
         {/* Footer content here */}
       </footer>
     );

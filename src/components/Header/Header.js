@@ -1,14 +1,11 @@
-//function Header() {
-//    return (
-//      <header>
-//       {/* Logo and navigation code here */}
-//      </header>
-//    );
-//  }
-const Header = () => {
+import React from 'react';
+import './Header.css'; 
+
+function Header() {
   return (
-    <h2>SmallSidebar</h2>
+    <header className="header">
+    </header>
   );
-};
+}
 
 export default Header;
