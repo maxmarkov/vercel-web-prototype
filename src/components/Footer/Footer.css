@@ -1,9 +1,59 @@
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f6f2fa;
-    height: 50px;
-    text-align: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-top: 1px solid #d3d3d3; /* Light grey line */
+  font-family: Arial, sans-serif;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-section.left {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.footer-section.right {
+  padding-top: 10px;
+  text-align: right;
+  text-decoration: none;
+  color: inherit;
+  font-size: 35px;
+}
+
+.icon-container {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon-container a {
+  color: inherit; /* Change this to the color you want */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.icon-container a:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+  font-size: 40px;
+}
+
+.footer span {
+  color: grey;
+  font-size: 16px;
+}
+
+.smiling-emoji {
+  font-size: 30px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.emoji-link {
+  text-decoration: none;
+  color: inherit;
+}
