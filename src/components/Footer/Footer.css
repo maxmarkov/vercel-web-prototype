@@ -39,7 +39,7 @@
 .icon-container a:hover {
   color: #0077b5;
   transform: scale(1.2);
-  font-size: 40px;
+  /*font-size: 40px;*/
 }
 
 .footer span {
