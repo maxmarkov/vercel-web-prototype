@@ -1,13 +1,17 @@
+/****************************************************/
+/*                Default footer style              */
+/****************************************************/
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 150px;
   padding-right: 150px;
-  border-top: 1px solid #d3d3d3; /* Light grey line */
+  border-top: 1px solid #d3d3d3; /* border top line */
   font-family: Arial, sans-serif;
 }
 
+/* footer section is split into 3 parts */
 .footer-section {
   flex: 1;
   text-align: center;
@@ -26,13 +30,14 @@
   font-size: 35px;
 }
 
+/* social media containers: logos, links and hover links */
 .icon-container {
   display: inline-block;
   margin: 0 10px;
 }
 
 .icon-container a {
-  color: inherit; /* Change this to the color you want */
+  color: inherit;
   transition: transform 0.3s ease; /* Smooth transition for transform */
 }
 
@@ -47,6 +52,7 @@
   font-size: 16px;
 }
 
+/* emoji and its link */
 .smiling-emoji {
   font-size: 30px;
   margin: 0 auto;
@@ -56,4 +62,50 @@
 .emoji-link {
   text-decoration: none;
   color: inherit;
+}
+
+/****************************************************/
+/*        Footer style when the window is small     */
+/****************************************************/
+@media (max-width: 768px) {
+  .footer {
+      justify-content: flex-start;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .footer-section {
+      display: none;
+  }
+
+  .footer-section.left,
+  .footer-section.center {
+      display: block;
+  }
+
+  .footer-section.left {
+      flex: 0;
+      padding-top: 0;
+      text-align: left;
+  }
+
+  .footer-section.center {
+      flex: 1;
+      text-align: center;
+  }
+
+  .smiling-emoji {
+      font-size: 30px;
+  }
+
+  .footer-section.left span {
+      font-size: 0;
+  }
+ 
+  .footer-section.left span::after {
+      /*content: '© 2023';*/
+      padding-top: 10px;
+      text-align: left;
+      font-size: 16px; 
+  }
 }
