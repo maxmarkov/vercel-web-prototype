@@ -8,7 +8,7 @@ RUN ["npm", "install", "--silent"]
 
 COPY . ./
 
-RUN ["npm", "install", "build"]
+RUN ["npm", "run", "build"]
 
 EXPOSE 3000
 

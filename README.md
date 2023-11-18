@@ -1,10 +1,10 @@
-# React Web App Template Deployed on Vercel
+# React web app deployed on Vercel
 
 This project serves as a template for deploying a simple React web application. The app features a header, footer, sidebar, and a main body component. The primary goal of this project is to provide a starting point for learning how React works and how to deploy a web app on the Vercel platform.
 
 ## Deployment Options
 
-### Docker Deployment
+### A. Docker Deployment
 
 The best way to deploy the app is using Docker.
 
@@ -30,7 +30,7 @@ Then, stop the container using its Container ID:
 
 ```docker stop <container ID>```
 
-### Local deployment
+### B. Local deployment
 
 You can also run the app locally for development and production builds.
 
