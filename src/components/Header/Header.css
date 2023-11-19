@@ -1,7 +1,63 @@
 .header {
-    background-color: #f6f2fa;
-    padding: 5px 10px; /* Add some padding */
-    height: 50px;
-    text-align: center;
-    color: white;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-bottom: 1px solid #d3d3d3; /* border bottom line */
+  font-family: Arial, sans-serif;
+  height: 7vh;
+  align-items: center; /* Center items vertically */
+}
+
+.search-bar-container {
+  position: relative; /* Set position relative for absolute positioning of the icon */
+  width: 25%; /* search bar width */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 0px #ddd;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Icon position from the left inside the search bar */
+  z-index: 10;
+  color: black; /* Icon color */
+}
+
+.search-bar {
+  padding: 10px 10px 10px 35px; /* Add left padding to prevent text overlap with icon */
+  width: 50%; /* Full width of the parent container */
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  outline: none; /* Remove the outline to keep it clean */
+  font-size: large; /* Adjust font size as needed */
+  font-family: Arial, sans-serif;
+  focus: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px; /* distance between two buttons*/
+}
+
+.sign-up-button,
+.sign-in-button {
+  padding: 10px 15px;       /* button padding for background button area */
+  border: none;             /* remove border for buttons */
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: large;
+  margin-top: 5px;
+}
+
+.sign-up-button {
+  background-color: black; /* button background color */
+  color: white;            /* font color */
+}
+
+.sign-in-button {
+  background-color: transparent;
+  color: black;
+}
